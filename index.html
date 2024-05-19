@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Expense Tracker</title>
+    <link
+      rel="shortcut icon"
+      href="ExpensesLogo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Main container for the application -->
+    <div class="container">
+      <!-- Heading for the application -->
+      <h1>EXPENSE TRACKER</h1>
+
+      <!-- Form for adding expenses -->
+      <form id="expense-form">
+        <!-- Input field for item name -->
+        <input
+          type="text"
+          id="item-name"
+          placeholder="Item Name"
+          required
+        />
+        <!-- Input field for item amount -->
+        <input
+          type="number"
+          id="item-amount"
+          placeholder="Item Amount (₹)"
+          required
+        />
+        <!-- Button to submit the expense -->
+        <button type="submit" id="submit-btn">
+          Add Expense
+        </button>
+      </form>
+
+      <!-- Ordered list to display expenses -->
+      <ol id="expense-list"></ol>
+
+      <!-- Button to clear all expenses -->
+      <button id="clear-all-btn">Clear All</button>
+
+      <!-- Display total amount -->
+      <div id="total-amount">Total: ₹ 0</div>
+    </div>
+
+    <!-- JavaScript file for handling logic -->
+    <script src="script.js"></script>
+  </body>
+</html>
