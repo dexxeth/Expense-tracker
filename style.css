@@ -5,7 +5,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(-45deg, #ee3577, #faa846); /* Gradient background */
+  background: linear-gradient(
+    -45deg,
+    #ee3577,
+    #faa846
+  ); /* Gradient background */
   background-size: 400% 400%;
   animation: AnimationName 15s ease infinite; /* Infinite background animation */
 }
@@ -84,6 +88,7 @@ ol {
   flex-grow: 1; /* Allow the list to grow within the container */
   overflow-y: auto; /* Enable vertical scrolling */
   margin: 0; /* Remove default margin */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 li {
